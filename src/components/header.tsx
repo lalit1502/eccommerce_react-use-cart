@@ -31,15 +31,12 @@ const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 const navItems:navItemsProps[] = [{ path: "/", name: "Home" },
 { path: "/shop", name: "Shop" },
 { path: "/about", name: "About" }]
-//console.log(navItems)
 {category.map((value) => (
   navItems[navItems.length]={
      path:"/category/"+value.id,
      name:value.title
   }
 ))}
-
-//console.log(navItems)
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
